@@ -3,9 +3,6 @@ body {
     margin: 0;
 }
 
-nav {
-    // position: relative;
-}
 
 .orange {
     background-color: #DC7633;
@@ -40,23 +37,42 @@ nav {
 
 .marron {
     background: #B03A2E;
+    position: relative;
 
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        font-size: 2.5rem;
         gap: 50px;
-        font-size: 3rem;
         list-style-type: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 75px;
+
         a {
-            position: absolute;
             color: white;
             text-decoration: none;
+
         }
+
+
+        li:first-child {
+            grid-column: 1/4;
+        }
+
+        li:nth-child(3) {
+            grid-column: 2/4;
+        }
+
+        li:nth-child(7) {
+            grid-column: 3/4;
+        }
+
     }
 
 }
 
 .noir {
-    margin-top: -240px;
     background: #641E16;
 }
